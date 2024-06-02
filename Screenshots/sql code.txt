@@ -1,0 +1,88 @@
+insert into poisepms.person(name, surname, telNum, email, phyAdress, occupation) values 
+
+('John', 'Doe', '1234567890', 'john@gmail.com', '123 Main St', 'Engineer'),
+
+('Jane', 'Smith', '9876543210', 'jane@yahoo.com', '456 Oak Ave', 'Architect'),
+
+('Bob','Johnson', '5551234567', 'bob@bestStore.com', '789 Pine Blvd', 'Contractor'),
+
+('Mbasa','Zinja', '0572203578', 'mbasa@gmail.com', '123 Sub St', 'Engineer'),
+
+('Gift','Ramhova', '0838225469', 'jane@gmail.com', '6 Poke Esate', 'Architect'),
+
+('Vuyo','Sikuza', '078859738', 'vuyo@hotmail.com', '79 Asinine Blvd', 'Contractor'),
+
+('Bulelani','Tokota', '0761235874', 'bulelani@gmail.com', '6 Pokentire Esate', 'Customer'),
+
+('Michel','Du Plesis', '0785497842', 'mcihel@hotmail.com', '9 Bordeaux Blvd', 'Customer');
+
+
+
+insert into poisepms.project(proj_name, proj_building, proj_address, proj_erf_number, total_expense,
+
+expense_paid, deadline, complete, customer_id, architect_id, contractor_id) values 
+
+('Office Renovation', 'Building A', '23 Mandela Street', 'ABC123', 50000, 20000, '2025-01-01', false,null, 7, 2, 3),
+
+('Residential Development', 'Block B', '67 Oakwood Avenue', 'XYZ789', 150000, 80000, '2024-12-15', false, null,8, 5, 6);
+
+
+
+CREATE TABLE Person (
+
+    person_ID INT PRIMARY KEY AUTO_INCREMENT,
+
+    name VARCHAR(150),
+
+    surname VARCHAR(150),
+
+    telNum VARCHAR(25) UNIQUE,
+
+    email VARCHAR(150) UNIQUE,
+
+    phyAdress VARCHAR(200),
+
+    occupation VARCHAR(50)
+
+);
+
+
+
+CREATE TABLE Project (
+
+    proj_num INT PRIMARY KEY AUTO_INCREMENT,
+
+    proj_name VARCHAR(255) NOT NULL,
+
+    proj_building VARCHAR(255),
+
+    proj_address VARCHAR(255),
+
+    proj_erf_number VARCHAR(50),
+
+    total_expense INT,
+
+    expense_paid INT,
+
+    deadline DATE,
+
+    complete BOOLEAN,
+
+    complete_date DATE,
+
+    customer_id INT,
+
+    architect_id INT,
+
+    contractor_id INT,
+
+    FOREIGN KEY (customer_id) REFERENCES Person(person_id),
+
+    FOREIGN KEY (architect_id) REFERENCES Person(person_id),
+
+    FOREIGN KEY (contractor_id) REFERENCES Person(person_id),
+
+    UNIQUE (proj_name, proj_building, proj_address, customer_id, architect_id, contractor_id)
+
+);
+

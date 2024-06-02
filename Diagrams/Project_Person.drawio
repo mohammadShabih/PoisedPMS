@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" modified="2024-02-08T13:02:09.386Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="lrjHpv2-XJu_fPCm96lh" version="23.1.2" type="device">
+  <diagram name="Page-1" id="2ca16b54-16f6-2749-3443-fa8db7711227">
+    <mxGraphModel dx="1290" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2ed32ef02a7f4228-18" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;" parent="1" target="2ed32ef02a7f4228-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lQzPSuDx_fxkwPU9Tscb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="240" as="targetPoint" />
+            <mxPoint x="550" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.75;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;" parent="1" source="2ed32ef02a7f4228-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="538" />
+              <mxPoint x="380" y="586" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-17" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;dashed=1;" parent="1" source="2ed32ef02a7f4228-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-8" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Project&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;proj_num&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;primary key&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;proj_name&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;proj_building&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;proj_address&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;proj_erf_number&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;total_expense&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;expense_paid&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;deadline&lt;/td&gt;&lt;td&gt;Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complete&lt;/td&gt;&lt;td&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complete_date&lt;/td&gt;&lt;td&gt;Date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;customer_id&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;foreignKey&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;architect_id&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;foreignKey&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;contractor_id&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;foreignKey&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="460" y="290" width="180" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="lQzPSuDx_fxkwPU9Tscb-2" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Project&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;person_ID&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;primary key&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&amp;nbsp;&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;surname&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;telNum&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;email&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;phyAddress&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;occupation&lt;/td&gt;&lt;td&gt;varchar()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="100" y="560" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="lQzPSuDx_fxkwPU9Tscb-3" value="Foreign key references person_ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="630" width="130" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
